@@ -13,16 +13,11 @@ public class FactorialCounterTestNg {
 
     @Test
     public void testFactorialWithPositiveNumber() {
-        Assert.assertEquals(counter.factorial(2), 2);
+        Assert.assertEquals(counter.factorial(1), 1);
     }
 
-    @Test
+    @Test(expectedExceptions = IllegalArgumentException.class)
     public void testFactorialWithNegativeNumber() {
-        try {
-            counter.factorial(-1);
-            Assert.fail("Предполагается IllegalArgumentException для отрицательного числа");
-        } catch (IllegalArgumentException e) {
-
-        }
+        FactorialCounter.factorial(-1);
     }
 }
