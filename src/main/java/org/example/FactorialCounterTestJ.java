@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
-class FactorialCounterTest {
+class FactorialCounterTestJ {
 
     @Test
     @DisplayName("Factorial of zero")
@@ -28,6 +28,4 @@ class FactorialCounterTest {
             FactorialCounter.factorial(-1);
         });
     }
-
-}public class FactorialCounterTestJ {
 }
